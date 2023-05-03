@@ -1,0 +1,48 @@
+<html>
+
+    <head>
+        <title>Wi-Fi setup over USB example</title>
+
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+
+        <script src="main.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="main.css" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <div id="mainDiv" style="display:none">
+            <h1>Wi-Fi setup over USB example</h1>
+            
+            <div>
+                <button id="selectDevice">Select Device</button>
+            </div>     
+            
+            <div id="statusDiv" style="margin-top: 10px;">
+            </div>
+
+            <div id="selectNetworkDiv" style="display:none; margin-top:10px;">
+                <select id="ssidSelect"></select> 
+                Password: <input id="passwordInput" type="password" />
+                <button id="configureButton">Configure</button>
+            </div>
+
+        </div> <!-- #mainDiv -->
+
+        <div id="unsupportedBrowserDiv" style="display:none">
+            Web-based device setup is not supported in this browser. Chrome, Edge, or Opera is required. This tool cannot be used on iOS in any browser.
+        </div>
+
+
+        <div id="scripts">
+            <script src='particle-usb.bundle.js'></script>
+        </div>
+
+    </body>
+
+</html>

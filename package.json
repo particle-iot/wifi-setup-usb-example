@@ -1,0 +1,16 @@
+{
+  "name": "wifi-setup-usb-example",
+  "description": "Example program for setting P2, Photon 2, and Argon Wi-Fi credentials using a browser",
+  "version": "0.0.1",
+  "private": true,
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
