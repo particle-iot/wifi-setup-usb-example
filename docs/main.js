@@ -3,7 +3,7 @@
 
 $(document).ready(function() {
 	// Also works with Photon 2, which shows up as a P2.
-	const allowedDeviceTypes = ['p2', 'argon'];
+	const allowedDeviceTypes = ['p2', 'argon', "m-som"];
 	
 	let usbDevice;
 
@@ -24,6 +24,7 @@ $(document).ready(function() {
 			const filters = [
 				{vendorId: 0x2b04, productId: 0xc00c}, // 0x0C = 12 = Argon
 				{vendorId: 0x2b04, productId: 0xc020}, // 0x20 = 32 = P2 and Photon 2
+				{vendorId: 0x2b04, productId: 0xc023}, // 0x23 = 35 = M-SoM
 			];
 
 			const nativeUsbDevice = await navigator.usb.requestDevice({ filters: filters })
