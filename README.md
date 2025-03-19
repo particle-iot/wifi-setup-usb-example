@@ -1,6 +1,6 @@
 # Wi-Fi Setup over USB Example
 
-This example shows how you can configure Wi-Fi credentials on a P2, Photon 2, or Argon, over USB from a browser.
+This example shows how you can configure Wi-Fi credentials on a P2, Photon 2, M-SoM, or Argon, over USB from a browser.
 
 Supported browsers include: Chrome, Edge, and Opera. This is intended for use on computers and Chromebooks. It also works on some Android phones and tablets using USB OTG.
 
